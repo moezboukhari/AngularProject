@@ -5,6 +5,4 @@ config.capabilities = {
   chromeOptions: {
     args: ['--headless', '--no-sandbox', '--disable-gpu']
   }
-};
-
-exports.config = config;
+}
