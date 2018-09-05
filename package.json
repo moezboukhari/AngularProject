@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "precommit": "npm run commitlint && npm run lint",
+    "precommit": "npm run lint",
     "commitlint": "commitlint -e",
     "e2e": "ng e2e"
   },
