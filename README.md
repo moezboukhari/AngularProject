@@ -1,5 +1,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/moezboukhari/AngularProject/badge.svg?branch=feat%2FCI-Coveralls)](https://coveralls.io/github/moezboukhari/AngularProject?branch=feat%2FCI-Coveralls)
 [![Build Status](https://travis-ci.org/moezboukhari/AngularProject.svg?branch=master)](https://travis-ci.org/moezboukhari/AngularProject)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ba995ca9c5934a719e7adf14751413d9)](https://www.codacy.com/app/moezboukhari/AngularProject?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=moezboukhari/AngularProject&amp;utm_campaign=Badge_Grade)
 
 # AngularProject
 
