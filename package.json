@@ -10,7 +10,7 @@
     "precommit": "npm run lint",
     "commitlint": "commitlint -e",
     "e2e": "ng e2e",
-    "test-coverage": "ng test --no-watch --code-coverage"
+    "test-coverage": "ng test --watch=false --code-coverage"
   },
   "private": true,
   "dependencies": {
