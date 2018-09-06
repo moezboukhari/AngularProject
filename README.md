@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fd4ea0df012e4ce9b316cca25e2f9074)](https://app.codacy.com/app/moezboukhari/AngularProject?utm_source=github.com&utm_medium=referral&utm_content=moezboukhari/AngularProject&utm_campaign=Badge_Grade_Dashboard)
 [![Coverage Status](https://coveralls.io/repos/github/moezboukhari/AngularProject/badge.svg?branch=master)](https://coveralls.io/github/moezboukhari/AngularProject?branch=master)
 [![Build Status](https://travis-ci.org/moezboukhari/AngularProject.svg?branch=master)](https://travis-ci.org/moezboukhari/AngularProject)
 
