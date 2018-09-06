@@ -10,7 +10,9 @@
     "precommit": "npm run lint",
     "commitlint": "commitlint -e",
     "e2e": "ng e2e",
-    "test-coverage": "ng test --watch=false --code-coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test-coverage": "ng test --watch=false --code-coverage",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    
   },
   "private": true,
   "dependencies": {
