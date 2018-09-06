@@ -28,6 +28,13 @@ module.exports = function (config) {
             flags: [ '-headless' ],
           },
         },
+        browsers: ['Chrome'],
+customLaunchers: {
+  ChromeHeadlessCI: {
+    base: 'ChromeHeadless',
+    flags: ['--no-sandbox', '--disable-gpu']
+  }
+},
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
