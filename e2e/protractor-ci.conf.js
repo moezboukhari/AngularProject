@@ -2,8 +2,14 @@ const config = require('./protractor.conf').config;
 
 config.capabilities = {
   browserName: 'Firefox',
-  moz:firefoxOptions: {
-    args: ['--safe-mode' , "--headless"]
+  firefoxOptions: {
+    args: ["--headless" , '--no-sandbox' , '--disable-gpu']
+  }
+};
+config.capabilities = {
+  browserName: 'chrome',
+  chromeOptions: {
+    args: ['--headless', '--no-sandbox=false', '--disable-gpu']
   }
 };
 
