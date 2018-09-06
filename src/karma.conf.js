@@ -21,10 +21,10 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true
     },
-    browsers: ['FirefoxHeadless'],
+    browsers: ['Firefox'],
         customLaunchers: {
           FirefoxHeadless: {
-            base: 'Firefox',
+            base: 'FirefoxHeadless',
             flags: [ '-headless' ],
           },
         },
