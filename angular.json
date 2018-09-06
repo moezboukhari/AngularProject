@@ -44,6 +44,23 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "demo1": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
             }
           }
         },
@@ -55,6 +72,9 @@
           "configurations": {
             "production": {
               "browserTarget": "AngularProject:build:production"
+            },
+            "demo1": {
+              "browserTarget": "AngularProject:build:demo1"
             }
           }
         },
