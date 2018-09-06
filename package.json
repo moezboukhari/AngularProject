@@ -5,11 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test --code-coverage",
+    "test": "ng test",
     "lint": "ng lint",
     "precommit": "npm run lint",
     "commitlint": "commitlint -e",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test-coverage": "ng test --no-watch --code-coverage"
   },
   "private": true,
   "dependencies": {
