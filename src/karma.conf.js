@@ -21,7 +21,7 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true
     },
-    coverageIstanbulReporter: {
+  /*  coverageIstanbulReporter: {
   reports: [ 'html', 'lcovonly' ],
   fixWebpackSourcePaths: true,
   thresholds: {
@@ -30,7 +30,7 @@ module.exports = function (config) {
     branches: 80,
     functions: 80
   }
-},
+},*/
     browsers: ['Firefox'],
         customLaunchers: {
           FirefoxHeadless: {
