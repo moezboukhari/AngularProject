@@ -7,7 +7,7 @@ config.capabilities = {
   },
   browserName: 'chrome',
   chromeOptions: {
-    args: ['--headless', '--no-sandbox=false', '--disable-gpu']
+    args: ['--headless', '--no-sandbox', '--disable-gpu']
   }
 };
 
