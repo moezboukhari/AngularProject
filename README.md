@@ -1,3 +1,6 @@
+[![Coverage Status](https://coveralls.io/repos/github/moezboukhari/AngularProject/badge.svg?branch=feat%2FCI-Coveralls)](https://coveralls.io/github/moezboukhari/AngularProject?branch=feat%2FCI-Coveralls)
+[![Build Status](https://travis-ci.org/moezboukhari/AngularProject.svg?branch=master)](https://travis-ci.org/moezboukhari/AngularProject)
+
 # AngularProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
