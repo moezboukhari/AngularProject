@@ -43,5 +43,4 @@ deploy:
   keep-history: true
   local-dir: master
   on:
-    branch: master
     branch: feat/gh-pages
