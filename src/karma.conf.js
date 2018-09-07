@@ -21,18 +21,20 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true
     },
-    browsers: ['Firefox','Chrome'],
+    browsers: ['Firefox'],
         customLaunchers: {
           FirefoxHeadless: {
             base: 'FirefoxHeadless',
             flags: [ '-headless' ],
           },
-          ChromeHeadlessCI: {
-            base: 'ChromeHeadless',
-            flags: ['--no-sandbox', '--disable-gpu']
-          }
-        }
-      },
+        },
+        browsers: ['Chrome'],
+customLaunchers: {
+  ChromeHeadlessCI: {
+    base: 'ChromeHeadless',
+    flags: ['--no-sandbox', '--disable-gpu']
+  }
+},
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
