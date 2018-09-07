@@ -11,7 +11,7 @@ addons:
       - firefox
     packages:
       - firefox
-
+      
 addons:
   apt:
     sources:
