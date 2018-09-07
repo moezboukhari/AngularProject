@@ -21,7 +21,6 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true
     },
-
     browsers: ['Firefox','Chrome'],
         customLaunchers: {
           FirefoxHeadless: {
