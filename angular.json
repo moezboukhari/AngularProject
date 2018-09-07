@@ -74,7 +74,8 @@
               "browserTarget": "AngularProject:build:production"
             },
             "demo1": {
-              "browserTarget": "AngularProject:build:demo1"
+              "browserTarget": "AngularProject:build:demo1",
+              "baseUrl": "AngularProject/demo1"
             }
           }
         },
