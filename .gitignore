@@ -37,6 +37,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# gh-dem Files
-/gh-pages/demo*
