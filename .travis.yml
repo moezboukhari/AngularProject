@@ -35,13 +35,13 @@ script:
 after_success:
     - npm run coveralls
     - npm run build:ng-pages-demo1
-- stage: deploy
-      if: branch = feat/gh-pages
+
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
+  local-dir: gh-pages
   on:
     branch: master
     branch: feat/gh-pages
