@@ -25,14 +25,16 @@ module.exports = function (config) {
         customLaunchers: {
           FirefoxHeadless: {
             base: 'FirefoxHeadless',
-            flags: [ '-headless' ]
-          }
-        ChromeHeadlessCI: {
-          base: 'ChromeHeadless',
-          flags: ['--no-sandbox', '--disable-gpu']
-        }
-      }
-
+            flags: [ '-headless' ],
+          },
+        },
+        browsers: ['Chrome'],
+customLaunchers: {
+  ChromeHeadlessCI: {
+    base: 'ChromeHeadless',
+    flags: ['--no-sandbox', '--disable-gpu']
+  }
+},
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
