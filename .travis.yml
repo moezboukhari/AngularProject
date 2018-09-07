@@ -11,7 +11,7 @@ addons:
       - firefox
     packages:
       - firefox
-      
+
 addons:
   apt:
     sources:
@@ -35,7 +35,8 @@ script:
 after_success:
     - npm run coveralls
     - npm run build:ng-pages-demo1
-
+- stage: deploy
+      if: branch = feat/gh-pages
 deploy:
   provider: pages
   skip-cleanup: true
