@@ -1,8 +1,11 @@
-@import "tools.scss";
-
-body, html {
+@import 'tools.scss';
+@import 'fonts/fonts';
+@import 'fonts/font-awesome-custom';
+@import './flaticon/flaticon';
+body,
+html {
   background-color: $bg-color;
-  font-family: "Verdana", "Geneva", sans-serif;
+  font-family: 'Poppins';
   color: $test-default-color;
 }
 .flex-countainer {
@@ -11,20 +14,19 @@ body, html {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-div {
-  display: flex;
-  flex-direction: row;
-  height: 200px;
-  width: 200px;
-  margin: 15px;
-  justify-content: center;
+  div {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    justify-content: center;
 
-  h2 {
-    user-select: none;
-    transform: rotate(15deg);
-  opacity : .5;
-  text-shadow: 0px 1px 5px (rgba(0, 0, 0,.9));
+    h2 {
+      user-select: none;
+      transform: rotate(15deg);
+      opacity: 0.5;
+      text-shadow: 0px 1px 5px (rgba(0, 0, 0, 0.9));
+    }
   }
-
-}
 }
