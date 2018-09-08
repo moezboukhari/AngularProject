@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "cc": "npm run prettier && npm run lint",
     "prettier": "prettier --write src/**/*{scss,ts,md,js}",
-    "precommit": "npx pretty-quick --staged  && npm run lint && npm run commitlint",
+    "precommit": "npx pretty-quick --staged  && npm run lint",
     "commitlint": "commitlint -e",
     "e2e": "ng e2e",
     "test-coverage": "ng test --watch=false --code-coverage",
