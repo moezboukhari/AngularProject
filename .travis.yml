@@ -8,9 +8,11 @@ node_js:
 addons:
   apt:
     sources:
-      - google-chrome, firefox
+      - google-chrome
+      - firefox
     packages:
-      - google-chrome-stable, firefox
+      - google-chrome-stable
+      - firefox
 
 cache:
   directories:
