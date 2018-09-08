@@ -6,7 +6,7 @@ node_js:
   - "8"
 
 addons:
-  firefox: "49.0"
+  firefox: "61.0.2"
 
 addons:
   apt:
