@@ -9,13 +9,13 @@
     "lint": "ng lint",
     "cc": "npm run prettier && npm run lint",
     "prettier": "prettier --write src/**/*{scss,ts,md}",
-    "precommit": "npx pretty-quick --staged  && npm run lint",
+    "precommit": "npm run lint",
     "commitlint": "commitlint -e",
     "e2e": "ng e2e",
     "test-coverage": "ng test --watch=false --code-coverage",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "build:ng-pages-demo1": "ng build --configuration=demo1 --output-path='gh-pages/demo1/' --base-href='/AngularProject/demo1/'",
-    "pretty-quick": "pretty-quick"
+    "pretty-quick": "npx pretty-quick --staged"
   },
   "private": true,
   "dependencies": {
