@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import { DashboardRoutingModule } from './dashboard/dashboardRouteModule';
 import { AppRoutingModule } from './app.routes';
 import { DashboardModule } from './dashboard/dashboard.module';
+
 import { AppComponent } from './app.component';
+import { RouterOutlet } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
