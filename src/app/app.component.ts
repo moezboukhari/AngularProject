@@ -6,7 +6,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: '<h1></h1><router-outlet></router-outlet>',
   styleUrls: ['./app.component.scss']
 })
 @NgModule({
