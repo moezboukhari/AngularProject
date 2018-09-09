@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
-  template: '<router-outlet></router-outlet>',
+  template: '<html><body><router-outlet></router-outlet></body></html>',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
