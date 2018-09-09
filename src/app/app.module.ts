@@ -5,10 +5,10 @@ import { AppRoutingModule } from './app.routes';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { RouterOutlet, RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent],
-  imports: [BrowserModule, RouterOutlet, RouterModule, DashboardModule, DashboardRoutingModule, AppRoutingModule],
+  imports: [BrowserModule, DashboardModule, DashboardRoutingModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
