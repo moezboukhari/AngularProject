@@ -6,16 +6,13 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 @Component({
   selector: 'app-root',
-  template: '<router-outlet></router-outlet>',
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 @NgModule({
   imports: [RouterOutlet, RouterModule],
   exports: [RouterOutlet, RouterModule],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
-  ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class AppComponent {
   title = 'AngularProject';

@@ -16,9 +16,6 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
   providers: [],
   bootstrap: [AppComponent],
   exports: [RouterModule],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
-  ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class AppModule {}
