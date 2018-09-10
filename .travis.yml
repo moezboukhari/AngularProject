@@ -3,10 +3,7 @@ sudo: false
 
 language: node_js
 node_js:
-  - "8"
-
-addons:
-  firefox: "61.0.2"
+  - '8'
 
 addons:
   apt:
@@ -17,25 +14,24 @@ addons:
 
 cache:
   directories:
-     - ./node_modules
+    - ./node_modules
 
 install:
   - npm install
 
 script:
-  - npm run test-coverage -- --watch=false --progress=false --browsers=FirefoxHeadless
+  - npm run test-coverage -- --watch=false --progress=false --browsers=ChromeHeadlessCI
   - npm run test -- --watch=false --progress=false --browsers=ChromeHeadlessCI
-  - npm run test -- --watch=false --progress=false --browsers=FirefoxHeadless
   - npm run e2e -- --protractor-config=./e2e/protractor-ci.conf.js
 
 after_success:
-    - npm run coveralls
-    - npm run build:ng-pages-demo1
+  - npm run coveralls
+  - npm run build:ng-pages-demo1
 
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  github-token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
   keep-history: true
   local-dir: gh-pages
   on:
