@@ -8,7 +8,7 @@ import { GridsterModule, GridsterItemComponent } from 'angular-gridster2';
 import { HelloWorldComponent } from './dashboard/widgets/hello-world/hello-world.component';
 @Component({
   selector: 'app-root',
-  template: '<h1></h1><router-outlet></router-outlet>',
+  templateUrl: `app.component.html`,
   styleUrls: ['./app.component.scss']
 })
 @NgModule({
