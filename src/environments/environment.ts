@@ -12,7 +12,12 @@ const dashingConfig: DashingConfig = {
       y: 0,
       x: 0,
 
-      widget: { component: WidgetGiphyComponent, params: { q: 'funny silicon valley' }, icon: null, class: 'bg-primary' }
+      widget: {
+        component: WidgetGiphyComponent,
+        params: { q: 'funny silicon valley' },
+        icon: null,
+        class: 'bg-primary'
+      }
     },
     { cols: 2, rows: 2, y: 0, x: 2, widget: { component: null, icon: 'fa fa-google', class: 'bg-secondary' } },
     {
@@ -37,7 +42,7 @@ const dashingConfig: DashingConfig = {
       y: 5,
       x: 5,
 
-      widget: { component: WidgetGiphyComponent, params: { q: 'funny cat'}, icon: null, class: 'bg-dark' }
+      widget: { component: WidgetGiphyComponent, params: { q: 'funny cat' }, icon: null, class: 'bg-dark' }
     },
     {
       cols: 2,
@@ -45,7 +50,7 @@ const dashingConfig: DashingConfig = {
       y: 3,
       x: 2,
       params: { q: 'funny cat' },
-      widget: { component: WidgetGiphyComponent, params: { q: 'funny cat'}, icon: null, class: 'bg-light text-dark' }
+      widget: { component: WidgetGiphyComponent, params: { q: 'funny cat' }, icon: null, class: 'bg-light text-dark' }
     },
     { cols: 2, rows: 1, y: 2, x: 2, widget: { component: null, icon: 'fi flaticon-043-twitter', class: 'bg-primary' } },
     { cols: 1, rows: 1, y: 3, x: 4, widget: { component: null, icon: 'fa fa-warning', class: 'bg-danger' } },
