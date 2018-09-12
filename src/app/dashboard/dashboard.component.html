@@ -1,3 +1,12 @@
-<p>
-  dashboard works!
-</p>
+
+<gridster [options]="options">
+  <gridster-item *ngFor="let item of dashboard; index as i" [item]="item" >
+
+    <div class="item-container" [ngClass]="item.widget.class">
+
+<i class="bg-icon" [ngClass]="item.widget.icon">  </i>
+<app-widget-countainer [data]="item"></app-widget-countainer>
+
+    </div>
+  </gridster-item>
+</gridster>
