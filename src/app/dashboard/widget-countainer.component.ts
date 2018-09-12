@@ -4,7 +4,16 @@ import { WidgetHostDirective } from './widget-host.directive';
 import { HelloWorldComponent } from './widgets/hello-world/hello-world.component';
 @Component({
   selector: 'app-widget-countainer',
-  template: `<ng-template [appWidgetHost]="data"></ng-template>`
+  template: `<ng-template [appWidgetHost]="data"></ng-template>`,
+  styles: [
+    `
+      :host {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+    `
+  ]
 })
 export class WidgetCountainerComponent implements OnInit {
   @Input()
@@ -15,7 +24,8 @@ export class WidgetCountainerComponent implements OnInit {
   private injectComponent(): void {
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(this.data.widget.component);
     const componentRef = this.widgetHostDirective.viewContainerRef.createComponent(componentFactory);
-    componentRef.instance['data'] = this.data;
+    const key = 'data';
+    componentRef.instance[key] = this.data;
   }
   ngOnInit() {
     if (!this.data.widget.component) {

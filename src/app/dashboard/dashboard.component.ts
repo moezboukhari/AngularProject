@@ -20,7 +20,7 @@ import { DashingGridsterItem } from 'src/app/dashboard/interfaces/dashing-gridst
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
   encapsulation: ViewEncapsulation.None
 })
 export class DashboardComponent implements OnInit {
@@ -31,17 +31,5 @@ export class DashboardComponent implements OnInit {
     this.options = this.dashboardgridsterconfigService.getOptions();
 
     this.dashboard = environment.dashingConfig.dashboard;
-  }
-
-  changedOptions() {
-    if (this.options.api && this.options.api.optionsChanged) {
-      this.options.api.optionsChanged();
-    }
-  }
-
-  removeItem($event, item) {
-    $event.preventDefault();
-    $event.stopPropagation();
-    this.dashboard.splice(this.dashboard.indexOf(item), 1);
   }
 }
