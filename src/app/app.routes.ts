@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', component: AppComponent },
   { path: '**', component: PageNotFoundComponent }
   // { path: 'path/:routeParam', component: MyComponent },
   // { path: 'staticPath', component: ... },
